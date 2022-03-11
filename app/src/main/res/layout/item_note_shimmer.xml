@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgTitleNote"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@color/lightGray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:roundedCornerRadius="@dimen/_10sdp"
+                fresco:actualImageScaleType="fitXY"
+                fresco:placeholderImageScaleType="fitXY" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgTitleDate"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@color/lightGray"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgTitleNote"
+                app:roundedCornerRadius="@dimen/_10sdp"
+                fresco:actualImageScaleType="fitXY"
+                fresco:placeholderImageScaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/txtNoteBody"
+                style="@style/BtnText.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:minLines="7"
+                app:layout_constraintStart_toStartOf="@+id/imgTitleDate"
+                app:layout_constraintTop_toBottomOf="@id/imgTitleDate" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
