@@ -13,7 +13,7 @@
 
     <!-- Facebook -->
     <string name="facebook_app_id">1879532772347939</string>
-    <string name="fb_login_protocol_scheme">fb1879532772347939</string>
+<!--    <string name="fb_login_protocol_scheme">fb1879532772347939</string>-->
     <string name="facebook_request_field">id,name,email,gender,birthday,picture,cover</string>
 
     <!-- Error API -->
