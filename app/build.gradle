@@ -171,6 +171,8 @@ dependencies {
     // Swipe Refresh
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
+    implementation 'androidx.work:work-runtime-ktx:2.7.0' // Crash Pending Intent android 31
+
 }
 
 // ADD THIS AT THE BOTTOM
